@@ -1,245 +1,363 @@
-body {
-    background-color: #4F6D93;
-    background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
-    background-repeat: no-repeat;
-    color: #666666;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    background-color: #000033;
-    color: #FFFFFF;
-    background-image: url(images/sunset.jpg);
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 60px;
-    text-align: center;
-    padding-top: 10px;
-    text-indent: 1em;
-}
-
-nav {
-    font-weight: bold;
-    padding: 20px;
-    float: left;
-    width: 160px;
-}
-
-nav a {
-    text-decoration: none;
-}
-
-nav ul {
-    list-style-type: none;
-    padding-left: 0px;
-    font-size: 1.2em;
-}
-
-a:link {
-    color: #000033;
-}
-
-a:visited {
-    color: #344873;
-}
-
-a:hover {
-    color: #ffffff;
-}
-
-#wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    background-color: #90C7E3;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 3px 0px 0px #333333;
-}
-
-main {
-    padding-top: 1px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    display: block;
-    background-color: #ffffff;
-    margin-left: 190px;
-}
-
-h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: Georgia, "Times New Roman", sans-serif;
-}
-
-h2 {
-    text-shadow: 1px 0px 0px #CCCCCC;
-    color: #3399CC;
-    font-family: Georgia, "Times New Roman", sans-serif;
-}
-
-h3 {
-    font-family: Georgia, "Times New Roman", sans-serif;
-}
-
-main ul {
-    list-style-image: url(images/marker.gif);
-}
-
-td {
-    color: #000033
-}
-
-.resort {
-    color: #5C7FA3;
-    font-weight: bold;
-}
-
-footer {
-    font-size: 75%;
-    font-style: italic;
-    text-align: center;
-    font-family: Georgia, "Times New Roman", sans-serif;
-    padding: 20px;
-    margin-left: 190px;
-    background-color: #ffffff;
-}
-
-#homehero {
-    background-image: url(images/coasthero.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 300px;
-    margin-left: 190px;
-}
-
-#yurthero {
-    background-image: url(images/yurthero.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 300px;
-    margin-left: 190px;
-}
-
-#trailhero {
-    background-image: url(images/trailhero.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 300px;
-    margin-left: 190px;
-}
-
-#contact {
-    font-size: 90%;
-}
-
-header,
-main,
-nav,
-footer,
-figure,
-figcaption,
-aside,
-section,
-article {
-    display: block;
-}
-
-#mobile {
-    display: none;
-}
-
-#desktop {
-    display: inline;
-}
-
-table {
-    border: 1px solid #3399cc;
-    width: 80%;
-    border-spacing: 0;
-}
-
-td,
-th {
-    padding: 5px;
-    border: 1px solid #3399cc;
-}
-
-td {
-    text-align: center;
-}
-
-.text {
-    text-align: left;
-}
-
-tr:nth-of-type(odd) {
-    background-color: #f5fafc;
-}
-
-@media only screen and (max-width: 64em) {
-    main {
-        margin-left: 0;
-    }
-    nav {
-        float: none;
-        width: auto;
-        text-align: center;
-        padding: 0.5em;
-    }
     body {
-        margin: 0;
+        background-color: #4F6D93;
+        background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
+        background-repeat: no-repeat;
+        color: #666666;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header {
+        background-color: #000033;
+        color: #FFFFFF;
+        background-image: url(images/sunset.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 60px;
+        text-align: center;
+        padding-top: 10px;
+        text-indent: 1em;
+    }
+    
+    nav {
+        font-weight: bold;
+        padding: 20px;
+        float: left;
+        width: 160px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        transition: color 3s ease-out;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding-left: 0px;
+        font-size: 1.2em;
+    }
+    
+    a:link {
+        color: #000033;
+    }
+    
+    a:visited {
+        color: #344873;
+    }
+    
+    a:hover {
+        color: #ffffff;
+    }
+    
+    #wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        background-color: #90C7E3;
+        min-width: 960px;
+        max-width: 2048px;
+        box-shadow: 3px 0px 0px #333333;
+    }
+    
+    main {
+        padding-top: 1px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        display: block;
+        background-color: #ffffff;
+        margin-left: 190px;
+    }
+    
+    h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Georgia, "Times New Roman", sans-serif;
+    }
+    
+    h2 {
+        text-shadow: 1px 0px 0px #CCCCCC;
+        color: #3399CC;
+        font-family: Georgia, "Times New Roman", sans-serif;
+    }
+    
+    h3 {
+        font-family: Georgia, "Times New Roman", sans-serif;
+    }
+    
+    main ul {
+        list-style-image: url(images/marker.gif);
+    }
+    
+    td {
+        color: #000033
+    }
+    
+    .resort {
+        color: #5C7FA3;
+        font-weight: bold;
+    }
+    
+    footer {
+        font-size: 75%;
+        font-style: italic;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", sans-serif;
+        padding: 20px;
+        margin-left: 190px;
         background-color: #ffffff;
     }
-    #wrapper {
-        min-width: 0;
-        width: auto;
-        box-shadow: none;
+    
+    #homehero {
+        background-image: url(images/coasthero.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin-left: 190px;
     }
-    nav li {
-        display: inline-block;
-        padding-top: 0.25em;
-        padding-bottom: 0.25em;
-        padding: 0.5em;
+    
+    #yurthero {
+        background-image: url(images/yurthero.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin-left: 190px;
     }
-    #homehero,
-    #yurthero,
+    
     #trailhero {
-        margin-left: 0;
-        height: 200px;
+        background-image: url(images/trailhero.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin-left: 190px;
     }
-    footer {
-        margin-left: 0;
-    }
-}
-
-@media only screen and (max-width: 37.5em) {
-    header {
-        padding-top: 1em;
-    }
-    main {
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        padding-left: 1em;
-        padding-right: 1em;
+    
+    #contact {
         font-size: 90%;
     }
-    h1 {
-        font-size: 1.5em;
-    }
-    nav {
-        padding: 0;
-    }
-    nav li {
+    
+    header,
+    main,
+    nav,
+    footer,
+    figure,
+    figcaption,
+    aside,
+    section,
+    article {
         display: block;
-        margin: 0;
-        border-bottom: 2px solid #330000;
     }
+    
     #mobile {
-        display: inline;
-    }
-    #desktop {
         display: none;
     }
-}
+    
+    #desktop {
+        display: inline;
+    }
+    
+    table {
+        border: 1px solid #3399cc;
+        width: 80%;
+        border-spacing: 0;
+    }
+    
+    td,
+    th {
+        padding: 5px;
+        border: 1px solid #3399cc;
+    }
+    
+    td {
+        text-align: center;
+    }
+    
+    .text {
+        text-align: left;
+    }
+    
+    tr:nth-of-type(odd) {
+        background-color: #F5FAFC;
+    }
+    
+    label {
+        float: left;
+        display: block;
+        text-align: right;
+        width: 120px;
+        padding-right: 20px;
+    }
+    
+    input[type="text"] {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    input[type="textarea"] {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    input[type="email"] {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    input[type="tel"] {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    input[type="date"] {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    input[type="number"] {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+        margin-left: 130px;
+    }
+    
+    video,
+    embed {
+        float: right;
+        padding-left: 20px;
+    }
+    
+    #gallery ul {
+        width: 300px;
+        list-style: none;
+    }
+    
+    #gallery {
+        position: relative;
+    }
+    
+    #gallery ul {
+        width: 300px;
+        list-style-image: none;
+    }
+    
+    #gallery img {
+        border: none;
+    }
+    
+    #gallery a {
+        text-decoration: none;
+        color: #000000;
+        font-style: italic;
+    }
+    
+    #gallery span {
+        position: absolute;
+        left: -1000px;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+    }
+    
+    #gallery a:hover span {
+        position: absolute;
+        top: 16px;
+        left: 320px;
+        text-align: center;
+        opacity: 1;
+    }
+    
+    #gallery li {
+        display: inline;
+        float: left;
+        padding: 10px;
+    }
+    
+    figure {
+        float: right;
+        position: absolute;
+        left: 280px;
+        margin: 10px;
+        text-align: center;
+        opacity: .25;
+    }
+    
+    figcaption {
+        text-align: center;
+        font-size: .8em;
+        font-style: italic;
+        color: #000000;
+    }
+    
+    @media only screen and (max-width: 64em) {
+        main {
+            margin-left: 0;
+        }
+        nav {
+            float: none;
+            width: auto;
+            text-align: center;
+            padding: 0.5em;
+        }
+        body {
+            margin: 0;
+            background-color: #ffffff;
+        }
+        #wrapper {
+            min-width: 0;
+            width: auto;
+            box-shadow: none;
+        }
+        nav li {
+            display: inline-block;
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+        }
+        #homehero,
+        #yurthero,
+        #trailhero {
+            margin-left: 0;
+            height: 200px;
+        }
+        footer {
+            margin-left: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 37.5em) {
+        header {
+            padding-top: 1em;
+        }
+        main {
+            padding-top: 0.1em;
+            padding-bottom: 0.1em;
+            padding-left: 1em;
+            padding-right: 1em;
+            font-size: 90%;
+        }
+        h1 {
+            font-size: 1.5em;
+        }
+        nav {
+            padding: 0;
+        }
+        nav li {
+            display: block;
+            margin: 0;
+            border-bottom: 2px solid #330000;
+        }
+        #mobile {
+            display: inline;
+        }
+        #desktop {
+            display: none;
+        }
+        label {
+            float: none;
+            text-align: left;
+        }
+        input[type="submit"] {
+            margin-left: 0;
+        }
+    }
